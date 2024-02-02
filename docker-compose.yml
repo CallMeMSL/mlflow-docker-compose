@@ -43,7 +43,7 @@ services:
             - POSTGRES_PASSWORD=${MYSQL_PASSWORD}
             - POSTGRES_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
         volumes:
-            - dbdata:/var/lib/mysql
+            - ~/apps/postgres:/var/lib/postgresql/data
 
     web:
         restart: always
